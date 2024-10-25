@@ -9,7 +9,8 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome Screen'),
+        title:
+            const Text('Welcome Screen', style: TextStyle(color: Colors.white)),
         actions: [
           IconButton(
             icon: Icon(Icons.search),
@@ -22,7 +23,9 @@ class WelcomeScreen extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.notifications),
             onPressed: () {
-              print('Notifications clicked');
+              if (kDebugMode) {
+                print('Notifications clicked');
+              }
             },
           ),
         ],
