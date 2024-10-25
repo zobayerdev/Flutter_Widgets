@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:self_learn/utlis/screens/welcome_screen.dart';
+import 'package:self_learn/utlis/screens/stack_position.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomeScreen(),
+      home: StackPositionScreen(),
     );
   }
 }
